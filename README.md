@@ -45,10 +45,10 @@ For different hardware, add flags to `LED_FLAGS`:
 Each panel's part of the ring has to sit in the corner that touches the other
 two panels. The `Remap` pixel mapper rotates each panel. Entries are in cable
 order from the Bonnet: the image offset `x,y`, then the rotation (`n` none,
-`s` 180°, `e`/`w` 90°).
+`s` 180°, `e` 90° counterclockwise, `w` 90° clockwise, seen from the front).
 
 ```
---led-cols=64 --led-chain=3 --led-pixel-mapper=Remap:192,64|128,0e|64,0s|0,0e
+--led-cols=64 --led-chain=3 --led-pixel-mapper=Remap:192,64|128,0e|64,0s|0,0s
 ```
 
 To redo it, set every entry to `n`, see where the ring sits, and add quarter
