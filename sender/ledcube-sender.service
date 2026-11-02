@@ -1,0 +1,10 @@
+[Unit]
+Description=Send CPU stats to the LED cube
+
+[Service]
+ExecStart=%h/.local/bin/ledcube-sender --host @HOST@ --port @PORT@
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target
