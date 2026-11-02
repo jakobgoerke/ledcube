@@ -5,6 +5,8 @@ Raspberry Pi with current Raspberry Pi OS (Debian 13 "trixie", 64-bit). It shows
 a PC's CPU temperature (background colour) and per-thread load (the ring around
 the corner) on three 64x64 HUB75 panels.
 
+![The LED cube showing CPU temperature and load](docs/cube.gif)
+
 The cube runs on a Pi 3B+. A Pi 5 works too, but needs its own power supply
 (see [Power](#power)).
 
